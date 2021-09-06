@@ -1,72 +1,368 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Mohamed Kabha</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
-  </head>
-  <body class="body1">
-    <div class="top-container">
-      <img class="cloudy" src="images/cloudy.png" alt="cloudy">
-      <h1 class="h1headtitle">Kabha
-      <h4 class="h4title">CS student and a web developer</h4>
-      </h1>
-      <img class="clouds" src="images/clouds.png" alt="clouds">
-      <!-- The Data-Science img -->
-      <img class="data-img" src="images/data-science.png" alt="data-img">
-      <img class="data-img2" src="images/data-science2.png" alt="data-img2">
-      <img class="grad-img" src="images/grad-science.png" alt="grad-img">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mohamed Kabha</title>
+  <!-- Scripts & JavaScript plugins. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+  </script>
+  <!-- KitFont Awesome -->
+  <script src="https://kit.fontawesome.com/d47ab4beb6.js" crossorigin="anonymous"></script>
+  <!-- FONT.GOOGLE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap&family=Bebas+Neue&display=swap&family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap&family=Balsamiq+Sans&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- My Local CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+  <!-- ############# top-container ############# -->
+  <div class="top-container container-fluid ">
+
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark ">
+      <a class="navbar-brand" href="#">Kabha</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="item-bar navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About me </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#software">Software</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More
+            </a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#volunteering">Volunteering</a>
+              <a class="dropdown-item" href="#experience">Experience</a>
+              <a class="dropdown-item" href="#contact">Contact me</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+    <div class="row row-cols-4">
+      <div class="col-3"><img class="img data-img" src="images/data-science.png" alt="data-img"></div>
+      <div class="col-6 text-center ">
+        <h1 class="h1headtitle">Kabha</h1>
+        <h4 class="h4title ">CS student & FullStack developer</h4>
+      </div>
+      <div class="col-3 "><img class="img data-img2" src="images/data-science2.png" alt="data-img2"></div>
+    </div>
+
+    <div class="row row-cols-4">
+      <div class="col-4"> <img class="img data-img2" src="images/desktop-computer.png" alt="desktop-computer-img">
+      </div>
+      <div class="col-4"> <img class="img boy-img" src="images/boy.png" alt="boy-img"></div>
+      <div class="col-4"> <img class="img data-img2" src="images/grad-hat.png" alt="grad-hat-img"> </div>
+    </div>
+  </div>
+  <!-- ############# middle-container ############# -->
+  <div class="middle-container">
+    <div class="Summary" id="aboutme">
+      <h2>Summary</h2>
+      <p style="margin:auto; width:58%; font-size: large;">
+        Computer Science student at Ben Gurion University of The Negev, looking for my first work experience. A self-
+        learner, team worker, highly motivated,
+        open minded with excellent interpersonal skills and always eager to learn.
+        Well-versed with Software Development tools and the ability to derive simple solutions to complex problems.
+      </p>
+    </div>
+    <hr>
+    <div class="data-skills">
+      <h2 id="software">Software - Skills</h2>
+      <div id="prog-lang" class="skill-row">
+        <h3 class="lang-h3 text-center" id="lang-skill">Programming Languages</h3>
+        <table class="lang-table table table-borderless">
+          <tbody>
+            <!-- there is no need for body -->
+            <tr>
+              <th scope="row">Java</th>
+              <td class="star-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+              </td>
+              <th scope="row">JavaScript</th>
+              <td class="star-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+              </td>
+              <th scope="row">C</th>
+              <td class="star-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Python</th>
+              <td class="star-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+              </td>
+              <th scope="row">CSS</th>
+              <td class="star-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+              </td>
+              <th scope="row">SQL</th>
+              <td class="star-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">C++</th>
+              <td class="star-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+              </td>
+              <th scope="row">HTML</th>
+              <td class="star-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+              </td>
+              <th scope="row">Assembly x86</th>
+              <td class="star-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star" style="opacity: 0.40;"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="skill-row">
+
+        <table class="table table-dark text-center">
+          <tbody>
+            <tr class="software-tr">
+              <th class="software-th" scope="row">Operation System <i class="fab fa-ubuntu"></i> </th>
+              <td>Windows, Linux with experience in Command Line Interface.</td>
+            </tr>
+            <tr class="software-tr">
+              <th class="software-th" scope="row">Network Programming <i class="fas fa-network-wired"></i> </th>
+              <td>TCP/IP UDP and HTTP</td>
+            </tr>
+            <tr class="software-tr">
+              <th class="software-th" scope="row"> OOP <i class="fas fa-project-diagram"></i> </th>
+              <td>
+                <p> Deep understanding of Object Oriented Programming </p>
+                <p> Systems Programming - Multithreading and Memory Management </p>
+              </td>
+            </tr>
+            <tr class="software-tr">
+              <th class="software-th" scope="row">Coding Skills <i class="fas fa-laptop-code"></i> </th>
+              <td>
+                <p> Excellent Solving and Debugging Skills </p>
+                <p> Concurrency Algorithms and Data Structures </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <section id="section-1">
+        <div id="volunteering" class="skill-row">
+          <div class="row row-cols-2">
+            <div class="col-4" style="text-align:center; padding:5%;"><i class="fas fa-hand-holding-heart"
+                style="font-size: 6.50rem;"></i></div>
+            <div class="col-8" style="padding: 0;">
+              <h2>Volunteering</h2>
+              <p style="text-align: left;">Amanina, a Non-Profit volunteering charity association.
+                We work to serve elderly people that have difficulties to work with technologies on low scale (Bank,
+                Healthy, ministerial).
+                Also, we work hard to make cancer patients children’s life look more happier by vesting them regularly.
+                Thing that makes me feel different about the meaning of life.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="carousal-amanina" class="carousel slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousal-amanina" data-slide-to="0" class="active"></li>
+            <li data-target="#carousal-amanina" data-slide-to="1"></li>
+            <li data-target="#carousal-amanina" data-slide-to="2"></li>
+          </ol>
+          <div class="caro-inner carousel-inner">
+            <div class="caro-item carousel-item active">
+              <img src="images/amanina-img/amanina-6.jpg" class="d-block img-fluid w-60 height:auto; img-thumbnail"
+                alt="amanina-6">
+              <div class="caro-caption carousel-caption d-none d-md-block">
+                <h5>Nazareth, Israel</h5>
+                <p>Food parcels distribution in Ramadan month</p>
+              </div>
+            </div>
+            <div class="caro-item carousel-item">
+              <img src="images/amanina-img/amanina-4.jpg" class="d-block img-fluid w-60 height:auto; img-thumbnail"
+                alt="amanina-4">
+              <div class="caro-caption carousel-caption d-none d-md-block">
+                <h5>Basmah, Israel</h5>
+                <p>Food parcels distribution in Ramadan month</p>
+              </div>
+            </div>
+            <div class="caro-item carousel-item">
+              <img src="images/amanina-img/amanina-7.JPG" class="d-block img-fluid w-60 height:auto; img-thumbnail"
+                alt="amanina-7">
+              <div class="caro-caption carousel-caption d-none d-md-block">
+                <h5>Kfar-Qasim, Israel</h5>
+                <p>Teaching our elderly people,
+                  how to open a bank account using "Hapoalim-Bank" application,
+                  and bank's reservation steps</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carousal-amanina" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousal-amanina" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ######## New Carousel ######## -->
+
+      <div id="carousal-education-experience" class="carousel slide" data-ride="carousel" style="margin-top: 4rem;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+
+
+            <section id="section-2">
+              <div id="Education" class="skill-row media">
+                <div class="jumbotron media-body" style="background-color: #FFDEDE;">
+                  <h1 class="display-4" style="color: #E43F5A;">Education <i class="fas fa-user-graduate"></i></i> </h1>
+                  <h4 style="color: #7D1935;">Bachelor of Science: Computer Science – 09/2018</h4>
+                  <h5 style="text-align: left; color: #7D1935;"> Ben Gurion University, Beersheva - Current GPA: 81.86
+                  </h5>
+                  <h6> <strong>set to graduate after 3-Semesters from now, in summer 2022</strong></h6>
+                  <!-- <hr class="my-4">
+                  <p style="text-align: left;">successful successful successful successful successful successful</p> -->
+                </div>
+              </div>
+            </section>
+
+          </div>
+          <div class="carousel-item">
+
+            <section id="section-3">
+              <div id="experience" class="skill-row media">
+                <div class="jumbotron media-body" style="background-color: #FFDEDE;">
+                  <h1 class="display-4" style="color: #E43F5A;">Experience <i class="fas fa-chalkboard-teacher"></i>
+                  </h1>
+                  <h4 style="color: #7D1935;">Academic Tutor - 10/2019</h4>
+                  <h5 style="text-align: left; color: #7D1935;"> Ben Gurion University, Beersheba, Israel</h5>
+                  <h6> <strong>Academic tutor for first year students in math Courses – Algebra and Calculus.</strong>
+                  </h6>
+                  <hr class="my-4">
+                  <p style="text-align: left;">Academic tutor in math courses which are usually the most difficult
+                    courses for many students.
+                    Assisting my students until they pass with successful grades make me feel great about being a part
+                    of something,
+                    always eager to give and share and for sure want to learn new things and getting stronger.</p>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousal-education-experience" role="button" data-slide="prev">
+          <span class="span-icon carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousal-education-experience" role="button" data-slide="next">
+          <span class="span-icon carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <hr calss="asd" style=" margin-top:0 ; margin-bottom: 100px;">
+
+      <div class="container" style=" width: 58.125rem; margin-bottom: 3.125rem;"> 
+        <div id="contact" class="card border-danger mb-3">
+          <div class="card-header bg-dark"> <h5 class="card-title">Get In Touch</h5> </div>
+          <div class="card-body text-danger">
+            <p class="card-text">Thanks for your interest, I look forward to hearing from you!</p>
+            <a class="footer-link" href="mailto:mkabha54@gmail.com"><button type="button" class="btn btn-danger btn-block">contact me</button></a>
+          </div>
+        </div>
+     </div>
 
     </div>
-    <div class="middle-container">
-      <div class="Summary">
-        <!-- <img src="" alt="myself"> -->
-        <h2>Summary</h2>
-        <p style="margin:auto; width:55%;">
-          Computer Science student at Ben Gurion University of The Negev, looking for my first work experience. A self- learner, team worker, highly motivated,
-           open minded with excellent interpersonal skills and always eager to learn.
-           Well-versed with Software Development tools and the ability to derive simple solutions to complex problems.
-        </p>
-      </div>
-      <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="" src="images/skills.png" alt="computer">
-          <h3>Lorem & Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-        </div>
-        <div class="skill-row">
-          <img class="" src="" alt="">
-          <h3>Lorem Ipsum Dolor</h3>
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-        <p class="contact-message">Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-        <a class="btn" href="mailto:mkabha54@gmail.com"><strong>CONTACT ME</strong></a>
-      </div>
-    </div>
 
 
-    <div class="bottom-container">
-
+    <div class="container-fluid bottom-container">
+      <p> 
+        <i class="fab-icon fab fa-linkedin" style=" font-size: xx-large;"></i>
+        <i class="fab-icon fab fa-github-square" style=" font-size: xx-large;"></i>
+        <i class="fab-icon fab fa-battle-net" style=" font-size: xx-large;"></i> 
+      </p>
       <a class="footer-link" href="https://www.linkedin.com/in/mohamed-kabha-275496173/">LinkedIn</a>
       <a class="footer-link" href="https://github.com/kabhamo">GitHub</a>
-      <a class="footer-link" href="file:///Users/Kabha/Desktop/The%20Complete%202021%20Web%20Development%20Bootcamp/CSS-Style%20Site/index.html">Website</a>
-      <p class= "copyright">© 2021 Mohamed Kabha@Personal</p>
-      <img class="website-img" src="images/website.png" alt="website">
-      <img class="linkedin-img" src="images/linkedin.png" alt="linkin">
-      <img class="github-img" src="images/github.png" alt="github">
+      <a class="footer-link"href="http://127.0.0.1:5500/index.html#">Website</a> <!-- i have to change after github share -->
+      <p class="copyright">© 2021 Mohamed Kabha@Personal</p>
     </div>
 
-  </body>
+</body>
+
 </html>
